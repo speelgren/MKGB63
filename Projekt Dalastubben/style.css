@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@200;300;400;700&display=swap');
+
+html, body {
+    background-color: #f5f5f7;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h1, a, .btn {
+    font-family: 'Prompt', sans-serif;
+    color: #212121;
+}
+
+.btn:hover {
+    color: #212121
+}
+
+.navbar {
+    margin-bottom: 10px;
+}
+
+.btn {
+    background-color: #212121;
+    color: #f5f5f7;
+}
+
+.icon {
+    width: 40px
+}
+
+.logo {
+    padding-top: 10px;
+    width: 250px;
+}
+
+.container {
+    min-height: 80vh;
+}
+
+
+
+@media (min-width: 991px ){
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .logo {
+        padding: 20px 30px;
+        width: 350px;
+    }
+}

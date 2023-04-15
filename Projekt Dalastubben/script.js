@@ -2,14 +2,41 @@
 
 window.addEventListener('DOMContentLoaded', () => {
 
+    /* Create eventlistener for sticky navbar */
+    let navbar = document.querySelector('.navbar');
+    let navbarOffsetTop = navbar.offsetTop;
+
+    let toggleStickyNavbar = () => {
+
+        if (window.pageYOffset >= navbarOffsetTop) {
+
+            navbar.classList.add('sticky');
+        } else {
+
+            navbar.classList.remove('sticky');
+        }
+    }
+
+    window.addEventListener('scroll', toggleStickyNavbar);
+
+    /* Container for params */
     let container = document.querySelector('.container');
+
+    /* Default site content */
     homeContent(container);
 
+    /* Create buttons */
     document.querySelectorAll('.nav-btn').forEach( button => {
 
         button.addEventListener('click', (e) => {
+
+            /* Back-to-top */
+            window.scrollTo({top: 0, behavior: 'smooth'});
+
+            /* Empty container */
             container.innerHTML = "";
 
+            /* Menu choice */
             switch (e.target.textContent) {
                 case 'Home':
                     homeContent(container);
@@ -36,62 +63,90 @@ const homeContent = (container) => {
 
     /* Title */
     let homeTitle = document.createElement('h1');
-    homeTitle.classList.add('home-title', 'd-flex', 'justify-content-center', 'm-3');
-    let homeTitleTextNode = document.createTextNode('Välkommen');
+    homeTitle.classList.add('home-title');
+    let homeTitleTextNode = document.createTextNode('Välkommen till Dalastubben');
+
+    /* Append */
     homeTitle.appendChild(homeTitleTextNode);
     homeContainer.appendChild(homeTitle);
 
-    /* Arrays */
-    let homeCardTitleTextArray = {
-        'Stubbfräsning': 'Ibland kan det vara jobbigt med stubbar på gården. Om ni ska installera en robotgräsklippare så kan stubbarna vara ivägen. Att gräva bort en stubbe med grävmaskin förstör oftas gräsmattan och tar längre tid för gräset att växa. Att gräva för hand tar evigheter och det är bara jobbigt. Vi fräser stubbarna 10-20cm under marknivå och fyller igen hålet.',
-        'Buskfräsning': 'Har du buskar och häckar som du vill bli av med så är buskfräsning ett effektivt sätt att bli av med dessa. Vi fräser hela vägen ner i rötterna så busken ej kan växa upp igen.',
-        'Trädfällning': 'Ibland kan träd behövas ta ner från tomten av olika anledningar. Oftast är det på grund av säkerhetskäl då träden kan stå illa till.',
-        'Bortforsling': 'Vi tar bort allt som är kvar efter fällningen och lämnar platsen ren och fin.'
-    };
-    let homeImageArray = {
-        'Stubbfräsning': 'https://images.unsplash.com/photo-1519680772-3b1f3e1b5f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80',
-        'Buskfräsning': 'https://images.unsplash.com/photo-1519680772-3b1f3e1b5f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80',
-        'Trädfällning': 'https://images.unsplash.com/photo-1519680772-3b1f3e1b5f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80',
-        'Bortforsling': 'https://images.unsplash.com/photo-1519680772-3b1f3e1b5f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'
+    /* Array */
+    let homeCardArray = {
+        'Stubbfräsning': {
+            'Description': 
+                'Stubbfräsning är en effektiv lösning för att hantera besvärliga stubbar, inte bara vid installation av robotgräsklippare, utan även för att skapa en jämn och säker gräsmatta. Vår tjänst eliminerar behovet av tidskrävande och ansträngande grävning, och sparar både tid och energi. Vi mal ner stubben under marknivå, vilket skyddar gräsmattan och ger gräset möjlighet att återhämta sig snabbt. Efteråt fyller vi igen hålet och packar det noggrant, skapar en säker och estetiskt tilltalande utemiljö som underlättar trädgårdsskötsel och förbättrar trädgårdens utseende.', 
+            'image': 
+                'https://dalastubben.se/____impro/1/product-image-vermeer-sc362-stump-grinder-1.jpg?etag=%227a802-6383410b%22&sourceContentType=image%2Fjpeg&ignoreAspectRatio&resize=395%2B263&extract=0%2B0%2B371%2B263&quality=85' 
+        },
+        'Buskfräsning': {
+            'Description':
+                'Buskfräsning är en effektiv metod för att snabbt avlägsna oönskade buskar och häckar, skapa öppet utrymme och förändra trädgårdens utseende. Vi mal ner buskar och rötter med en kraftfull buskfräs, förhindrar återväxt och förbereder området för framtida trädgårdsprojekt, samtidigt som vi tar hänsyn till omgivande växter och träd. Vår buskfräsningstjänst förvandlar er trädgård till en attraktiv och funktionell plats på ett enkelt och effektivt sätt.',
+            'image': 
+                'https://dalastubben.se/____impro/1/vermeer-sc362-575x375.jpg?etag=%2264e60-63836f3f%22&sourceContentType=image%2Fjpeg&ignoreAspectRatio&resize=395%2B263&extract=0%2B0%2B371%2B263&quality=85'
+        },
+        'Trädfällning': {
+            'Description': 
+                'Trädfällning kan vara nödvändigt av flera skäl, såsom säkerhet, trädets hälsa eller för att skapa mer utrymme. Vi hanterar komplexa och riskfyllda uppgifter med erfaren personal, säkerhetsrutiner och rätt utrustning. Efter trädfällning erbjuder vi även bortforsling och stubbfräsning för att återställa området på ett säkert och effektivt sätt.',
+            'image': 
+                'https://dalastubben.se/____impro/1/markus-spiske-_b9mXKt0fc4-unsplash.jpg?etag=%221e945b-63a40193%22&sourceContentType=image%2Fjpeg&ignoreAspectRatio&resize=311%2B467&extract=0%2B0%2B303%2B393&quality=85'
+        },
+        'Bortforsling': {
+            'Description': 
+                'Efter trädfällning, buskfräsning eller andra trädgårdsarbeten kan det finnas rester att ta hand om. Vi erbjuder en bortforslingstjänst som tar hand om allt arbete kring att samla ihop och transportera bort buskar, stammar och grenar miljövänligt, enligt regler och förordningar. Ni kan vara säkra på att er trädgård lämnas rent och prydligt, och ni slipper oroa er för att ta hand om veden själva.',
+            'image': 
+                'https://dalastubben.se/____impro/1/irena-carpaccio-SZbauhjIizo-unsplash.jpg?etag=W%2F%221a7404-63a41958%22&sourceContentType=image%2Fjpeg&ignoreAspectRatio&resize=303%2B455&extract=0%2B0%2B303%2B393&quality=85'
+        }
     };
 
     /* Loop */
-    for (let key in homeCardTitleTextArray) {
+    for (let key in homeCardArray) {
 
-        console.log(key, homeCardTitleTextArray[key]);
+        let homeCard = document.createElement('section');
+        homeCard.classList.add('card', 'm-3');
+        let homeCardBody = document.createElement('article');
+        homeCardBody.classList.add('home-card-body', 'card-body');
+
+        /* Image */
+        let homeCardImage = document.createElement('img');
+        homeCardImage.classList.add('card-img-top');
+        homeCardImage.src = homeCardArray[key].image;
+
+        /* Title */
+        let homeCardTitle = document.createElement('h1');
+        homeCardTitle.classList.add('card-title');
+        let homeCardTitleNode = document.createTextNode(key);
+
+        /* Description */
+        let homeCardText = document.createElement('p');
+        homeCardText.classList.add('card-text');
+        let homeCardTextNode = document.createTextNode(homeCardArray[key].Description);
+
+        /* Append */
+        homeCard.appendChild(homeCardImage);
+        homeCardTitle.appendChild(homeCardTitleNode);
+        homeCardBody.appendChild(homeCardTitle);
+        homeCardText.appendChild(homeCardTextNode);
+        homeCardBody.appendChild(homeCardText);
+        homeCard.appendChild(homeCardBody);
+        homeContainer.appendChild(homeCard);
+        container.appendChild(homeContainer);
     }
-    
-    /* Card */
-    let homeCard = document.createElement('section');
-    homeCard.classList.add('home-card', 'card', 'm-3');
-    let homeCardImage = document.createElement('img');
-    homeCardImage.classList.add('home-card-image', 'card-img-left');
-    let homeCardBody = document.createElement('article');
-    homeCardBody.classList.add('home-card-body', 'card-body');
-    let homeCardTitle = document.createElement('h2');
-    homeCardTitle.classList.add('home-card-title', 'card-title');
-    let homeCardText = document.createElement('p');
-    homeCardText.classList.add('home-card-text', 'card-text');
-
-    /* Append */
-    homeCardBody.appendChild(homeCardText);
-    homeCardBody.appendChild(homeCardTitle);
-    homeCard.appendChild(homeCardBody);
-    homeCard.appendChild(homeCardImage);
-    homeContainer.appendChild(homeCard);
-    container.appendChild(homeContainer);
 }
 
 const aboutContent = (container, e) => {
 
+
+    console.log(container, e);
 }
 
 const contactContent = (container, e) => {
 
-    
+
+    console.log(container, e);
 }
 
 const faqContent = (container, e) => {
 
-    
+
+    console.log(container, e);
 }

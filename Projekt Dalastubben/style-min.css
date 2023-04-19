@@ -1,54 +1,126 @@
-@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@200;300;400;700&display=swap');
+/* Imported fonts */
 
-html, body {
+/* Prompt */
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@200;300;400;700&display=swap');
+/* Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* Alfa Slab One*/
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+/* Merriweather */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+/* ****************************************** */
+
+/* Background colour */
+body {
     background-color: #f5f5f7;
 }
 
-h1 {
-    font-size: 3rem;
+/* Font & colour */
+.home-title, .btn {
+    font-family: 'Prompt', sans-serif;
 }
 
-h1, a, .btn {
-    font-family: 'Prompt', sans-serif;
+.home-title {
+    font-weight: 'bold';
     color: #212121;
 }
 
-.btn:hover {
-    color: #212121
+p {
+    font-family: 'Merriweather', serif;
+    color: #212121;
 }
 
-.navbar {
-    margin-bottom: 10px;
-}
-
+/* Button colour */
 .btn {
     background-color: #212121;
     color: #f5f5f7;
 }
 
-.icon {
-    width: 40px
+.btn:hover {
+    background-color: #f5f5f7;
+    color: #212121;
 }
 
+/* Logo */
 .logo {
     padding-top: 10px;
     width: 250px;
 }
 
-.container {
-    min-height: 80vh;
+/* Title */
+h1 {
+    font-size: 2rem;
 }
 
+.home-title {
+    text-align: center;
+}
 
+.card-title {
+    font-family: 'Alfa Slab One', cursive;
+}
+
+/* Navbar */
+.navbar {
+    /* margin-bottom: 10px; */
+    /* background-color: #f5f5f7; */
+}
+
+/* Social media icons */
+.icon {
+    width: 40px;
+}
+
+/* Container */
+.container {
+    /* min-height: 80vh; */
+}
+
+.home-container, .about-container {
+    max-width: 700px;
+}
+
+.card {
+    margin-top: 10px;
+    margin-bottom: 50px !important;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.card-text::first-line {
+    text-indent: 1.5em !important;
+}
+
+/* Scroll-snap-stop */
+
+/* Footer */
+footer {
+    padding-top: 10px;
+    background-color: #f5f5f7;
+    opacity: 90%;
+}
 
 @media (min-width: 991px ){
-
-    h1 {
-        font-size: 3rem;
-    }
 
     .logo {
         padding: 20px 30px;
         width: 350px;
+    }
+
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 999;
+    }
+}
+
+@media (max-width: 525px) {
+
+    h1 {
+        font-size: 1.7rem;
     }
 }

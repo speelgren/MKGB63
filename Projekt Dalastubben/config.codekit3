@@ -9,6 +9,19 @@
   ],
   "creatorBuild" : "34472",
   "files" : {
+    "\/img\/338478373_1172961236713969_3398877940177328384_n.webp.jpeg" : {
+      "ft" : 16384,
+      "iS" : 311335,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/338478373_1172961236713969_3398877940177328384_n.webp.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/img\/dalastubben-logo.png" : {
       "ft" : 32768,
       "iS" : 44053,
@@ -61,6 +74,33 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/script.ts" : {
+      "cDF" : 0,
+      "ft" : 128,
+      "jxM" : 0,
+      "ma" : 0,
+      "mDT" : 0,
+      "mi" : 0,
+      "moR" : 0,
+      "moT" : 2,
+      "oA" : 0,
+      "oAP" : "\/script.js",
+      "oF" : 0,
+      "rC" : 0,
+      "tEC" : 0
+    },
+    "\/style-min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/style-min-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/style.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -82,7 +122,7 @@
   },
   "projectAttributes" : {
     "creationDate" : 703131710.04145896,
-    "displayValue" : "Projekt",
+    "displayValue" : "Projekt Dalastubben",
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "brackets_orange",
     "iconImageWasSetByUser" : 0

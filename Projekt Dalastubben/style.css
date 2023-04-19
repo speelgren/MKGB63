@@ -63,29 +63,21 @@ h1 {
 
 /* Navbar */
 .navbar {
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     /* background-color: #f5f5f7; */
-}
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 999;
 }
 
 /* Social media icons */
 .icon {
-    width: 40px
+    width: 40px;
 }
-
 
 /* Container */
 .container {
-    min-height: 80vh;
+    /* min-height: 80vh; */
 }
 
-.home-container {
+.home-container, .about-container {
     max-width: 700px;
 }
 
@@ -98,6 +90,12 @@ h1 {
     text-align: center;
 }
 
+.card-text::first-line {
+    text-indent: 1.5em !important;
+}
+
+/* Scroll-snap-stop */
+
 /* Footer */
 footer {
     padding-top: 10px;
@@ -107,13 +105,16 @@ footer {
 
 @media (min-width: 991px ){
 
-    h1 {
-        font-size: 3rem;
-    }
-
     .logo {
         padding: 20px 30px;
         width: 350px;
+    }
+
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 999;
     }
 }
 

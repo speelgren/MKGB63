@@ -35,22 +35,24 @@ p {
 .btn {
     background-color: #212121;
     color: #f5f5f7;
+    width: 100px;
 }
 
 .btn:hover {
     background-color: #f5f5f7;
     color: #212121;
+    font-weight: 600;
 }
 
 /* Logo */
 .logo {
-    padding-top: 10px;
+    margin-top: 0.75rem;
     width: 250px;
 }
 
 /* Title */
 h1 {
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 
 .home-title {
@@ -58,7 +60,7 @@ h1 {
 }
 
 .card-title {
-    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Alfa Slab One';
 }
 
 /* Navbar */
@@ -66,6 +68,18 @@ h1 {
     /* margin-bottom: 10px; */
     /* background-color: #f5f5f7; */
 }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.hidden-btn {
+    background-color: #f5f5f7 !important;
+}
+
 
 /* Social media icons */
 .icon {
@@ -77,13 +91,9 @@ h1 {
     /* min-height: 80vh; */
 }
 
-.home-container, .about-container {
-    max-width: 700px;
-}
-
 .card {
     margin-top: 10px;
-    margin-bottom: 50px !important;
+    margin-bottom: 25px !important;
 }
 
 .card-title {
@@ -95,6 +105,14 @@ h1 {
 }
 
 /* Scroll-snap-stop */
+.scroll-container {
+    scroll-snap-type: y mandatory;
+}
+
+.scroll-item {
+    scroll-snap-align: start;
+    scroll-snap-stop: normal;
+}
 
 /* Footer */
 footer {
@@ -106,21 +124,18 @@ footer {
 @media (min-width: 991px ){
 
     .logo {
-        padding: 20px 30px;
         width: 350px;
     }
 
-    .sticky {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 999;
+    /* Container */
+    .home-container, .about-container {
+        max-width: 700px;
     }
 }
 
-@media (max-width: 525px) {
+@media (min-width: 768px) {
 
     h1 {
-        font-size: 1.7rem;
+        font-size: 2rem;
     }
 }

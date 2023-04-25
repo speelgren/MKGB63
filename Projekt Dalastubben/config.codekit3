@@ -9,6 +9,46 @@
   ],
   "creatorBuild" : "34472",
   "files" : {
+    "\/fonts\/kenyan-coffee\/kenyan coffee bd it.otf" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/fonts\/kenyan-coffee\/kenyan coffee bd it.otf",
+      "oF" : 0
+    },
+    "\/fonts\/kenyan-coffee\/kenyan coffee bd.otf" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/fonts\/kenyan-coffee\/kenyan coffee bd.otf",
+      "oF" : 0
+    },
+    "\/fonts\/kenyan-coffee\/kenyan coffee rg it.otf" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/fonts\/kenyan-coffee\/kenyan coffee rg it.otf",
+      "oF" : 0
+    },
+    "\/fonts\/kenyan-coffee\/kenyan coffee rg.otf" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/fonts\/kenyan-coffee\/kenyan coffee rg.otf",
+      "oF" : 0
+    },
+    "\/fonts\/kenyan-coffee\/Typodermic Desktop EULA 2023.pdf" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/fonts\/kenyan-coffee\/Typodermic Desktop EULA 2023.pdf",
+      "oF" : 0
+    },
     "\/img\/338478373_1172961236713969_3398877940177328384_n.webp.jpeg" : {
       "ft" : 16384,
       "iS" : 311335,
@@ -35,6 +75,32 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/img\/forest-g609f0d95e_1920.jpg" : {
+      "ft" : 16384,
+      "iS" : 795242,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/forest-g609f0d95e_1920.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/forest-g936cb3bf0_1920.jpg" : {
+      "ft" : 16384,
+      "iS" : 840656,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/forest-g936cb3bf0_1920.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/img\/icon\/icons8-facebook.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -54,6 +120,97 @@
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
+    },
+    "\/img\/PXL_20230418_074412463.PORTRAIT.jpg" : {
+      "ft" : 16384,
+      "iS" : 7525916,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/PXL_20230418_074412463.PORTRAIT.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/PXL_20230418_074420026.jpg" : {
+      "ft" : 16384,
+      "iS" : 4086822,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/PXL_20230418_074420026.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/PXL_20230420_063527274.jpg" : {
+      "ft" : 16384,
+      "iS" : 4462327,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/PXL_20230420_063527274.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/PXL_20230420_071831380.jpg" : {
+      "ft" : 16384,
+      "iS" : 4940296,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/PXL_20230420_071831380.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/SC362_Action_01.jpg" : {
+      "ft" : 16384,
+      "iS" : 14932776,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/SC362_Action_01.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/Skärmbild 2023-03-27 142102.png" : {
+      "ft" : 32768,
+      "iS" : 2665361,
+      "oA" : 0,
+      "oAP" : "\/img\/Skärmbild 2023-03-27 142102.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/img\/Skärmbild 2023-03-27 142147.png" : {
+      "ft" : 32768,
+      "iS" : 3335706,
+      "oA" : 0,
+      "oAP" : "\/img\/Skärmbild 2023-03-27 142147.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
     },
     "\/index.html" : {
       "cB" : 0,

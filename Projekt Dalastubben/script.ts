@@ -48,36 +48,36 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-type Service = {
+type Card = {
     description: string;
     image: string;
     alt: string;
 };
 
-const createServiceCard = (key: string, service: Service) => {
-    const serviceCard = document.createElement('section');
-    serviceCard.classList.add('card', 'm-3');
+const createCard = (key: string, card: Card) => {
+    const Card = document.createElement('section');
+    Card.classList.add('card', 'm-3');
 
-    const serviceCardBody = document.createElement('article');
-    serviceCardBody.classList.add('card-body', 'scroll-item');
+    const CardBody = document.createElement('article');
+    CardBody.classList.add('card-body', 'scroll-item');
 
-    const serviceCardImage = document.createElement('img');
-    serviceCardImage.classList.add('card-img-top');
-    serviceCardImage.src = service.image;
-    serviceCardImage.alt = service.alt;
+    const CardImage = document.createElement('img');
+    CardImage.classList.add('card-img-top');
+    CardImage.src = card.image;
+    CardImage.alt = card.alt;
 
-    const serviceCardTitle = document.createElement('h1');
-    serviceCardTitle.classList.add('card-title');
-    serviceCardTitle.textContent = key;
+    const CardTitle = document.createElement('h1');
+    CardTitle.classList.add('card-title');
+    CardTitle.textContent = key;
 
-    const serviceCardText = document.createElement('p');
-    serviceCardText.classList.add('card-text');
-    serviceCardText.textContent = service.description;
+    const CardText = document.createElement('p');
+    CardText.classList.add('card-text');
+    CardText.textContent = card.description;
 
-    serviceCardBody.append(serviceCardTitle, serviceCardText);
-    serviceCard.append(serviceCardImage, serviceCardBody);
+    CardBody.append(CardTitle, CardText);
+    Card.append(CardImage, CardBody);
 
-    return serviceCard;
+    return Card;
 };
 
 const homeContent = (container: HTMLElement) => {
@@ -86,14 +86,8 @@ const homeContent = (container: HTMLElement) => {
     const homeContainer = document.createElement('div');
     homeContainer.classList.add('home-container', 'container', 'scroll-container');
 
-    /* Title */
-    const homeHeader = document.createElement('h1');
-    homeHeader.classList.add('home-header', 'text-center');
-    homeHeader.textContent = 'Kontakta oss för en kostnadsfri offert!';
-    homeContainer.appendChild(homeHeader);
-
     /* Array */
-    const homeArray: Record<string, Service> = {
+    const homeArray: Record<string, Card> = {
         'Stubbfräsning': {
             'description': 
                 'Stubbfräsning hanterar effektivt besvärliga stubbar för jämnare gräsmattor och enklare robotgräsklipparinstallation. Vår tjänst ersätter tidskrävande grävning och sparar energi. Vi mal ner stubben, skyddar gräsmattan och låter gräset återhämta sig snabbt. Hålet fylls igen och packas noggrant för en säker och estetiskt tilltalande trädgård.', 
@@ -122,7 +116,7 @@ const homeContent = (container: HTMLElement) => {
 
     /* Loop to display content in array */
     for (const key in homeArray) {
-        const serviceCard = createServiceCard(key, homeArray[key]);
+        const serviceCard = createCard(key, homeArray[key]);
         homeContainer.appendChild(serviceCard);
     }
 
@@ -133,31 +127,21 @@ const homeContent = (container: HTMLElement) => {
 const aboutContent = (container: HTMLElement) => {
 
     /* About container */
-    let aboutContainer = document.createElement('div');
+    const aboutContainer = document.createElement('div');
     aboutContainer.classList.add('about-container', 'container');
 
     /* Title */
+    const aboutTitle = document.createElement('h1');
+    aboutTitle.classList.add('about-title', 'text-center');
+    aboutTitle.textContent = 'Om oss';
 
-
-    /* Array */
-    const aboutArray: Record<string, Service> = {
-        'Om oss': {
-            'description':
-                'Lorem ipsum dolor sit amet consectetur adipisicing elit. A ipsum sed alias! Illum nobis voluptatibus magni eius, tempore quidem. Unde quis ab adipisci perferendis nostrum obcaecati cupiditate tempore doloremque quaerat. Eos culpa ipsa corrupti quidem! Assumenda iste, error deleniti sed aperiam commodi adipisci delectus voluptas officia, illum doloribus odio non ipsam odit, nemo est quaerat! Voluptatem optio sed quis beatae!',
-            'image':
-                'img/338478373_1172961236713969_3398877940177328384_n.webp.jpeg',
-            'alt':
-                'Företagsfordon Dalastubben'
-        }
-    };
-
-    /* Loop to display content in array */
-    for (const key in aboutArray) {
-        const serviceCard = createServiceCard(key, aboutArray[key]);
-        aboutContainer.appendChild(serviceCard);
-    }
+    const aboutText = document.createElement('p');
+    aboutText.classList.add('about-text');
+    aboutText.textContent = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque laudantium eius rerum, reiciendis voluptas quibusdam provident sint, qui ex, beatae assumenda error facilis vero fuga impedit quae dolorem blanditiis magni? Iusto nisi minima praesentium quis sint pariatur, recusandae architecto in omnis. Dignissimos repellendus quidem at cumque, ratione doloribus in dolorem illum nostrum. Recusandae repellendus obcaecati voluptatibus itaque quo! Enim, laboriosam?';
 
     /* Append to container */
+    aboutContainer.appendChild(aboutTitle);
+    aboutContainer.appendChild(aboutText);
     container.appendChild(aboutContainer);
 }
 

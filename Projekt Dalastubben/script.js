@@ -43,34 +43,29 @@ window.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
-var createServiceCard = function (key, service) {
-    var serviceCard = document.createElement('section');
-    serviceCard.classList.add('card', 'm-3');
-    var serviceCardBody = document.createElement('article');
-    serviceCardBody.classList.add('card-body', 'scroll-item');
-    var serviceCardImage = document.createElement('img');
-    serviceCardImage.classList.add('card-img-top');
-    serviceCardImage.src = service.image;
-    serviceCardImage.alt = service.alt;
-    var serviceCardTitle = document.createElement('h1');
-    serviceCardTitle.classList.add('card-title');
-    serviceCardTitle.textContent = key;
-    var serviceCardText = document.createElement('p');
-    serviceCardText.classList.add('card-text');
-    serviceCardText.textContent = service.description;
-    serviceCardBody.append(serviceCardTitle, serviceCardText);
-    serviceCard.append(serviceCardImage, serviceCardBody);
-    return serviceCard;
+var createCard = function (key, card) {
+    var Card = document.createElement('section');
+    Card.classList.add('card', 'm-3');
+    var CardBody = document.createElement('article');
+    CardBody.classList.add('card-body', 'scroll-item');
+    var CardImage = document.createElement('img');
+    CardImage.classList.add('card-img-top');
+    CardImage.src = card.image;
+    CardImage.alt = card.alt;
+    var CardTitle = document.createElement('h1');
+    CardTitle.classList.add('card-title');
+    CardTitle.textContent = key;
+    var CardText = document.createElement('p');
+    CardText.classList.add('card-text');
+    CardText.textContent = card.description;
+    CardBody.append(CardTitle, CardText);
+    Card.append(CardImage, CardBody);
+    return Card;
 };
 var homeContent = function (container) {
     /* Home container */
     var homeContainer = document.createElement('div');
     homeContainer.classList.add('home-container', 'container', 'scroll-container');
-    /* Title */
-    var homeHeader = document.createElement('h1');
-    homeHeader.classList.add('home-header', 'text-center');
-    homeHeader.textContent = 'Kontakta oss för en kostnadsfri offert!';
-    homeContainer.appendChild(homeHeader);
     /* Array */
     var homeArray = {
         'Stubbfräsning': {
@@ -91,7 +86,7 @@ var homeContent = function (container) {
     };
     /* Loop to display content in array */
     for (var key in homeArray) {
-        var serviceCard = createServiceCard(key, homeArray[key]);
+        var serviceCard = createCard(key, homeArray[key]);
         homeContainer.appendChild(serviceCard);
     }
     /* Append to container */
@@ -102,20 +97,15 @@ var aboutContent = function (container) {
     var aboutContainer = document.createElement('div');
     aboutContainer.classList.add('about-container', 'container');
     /* Title */
-    /* Array */
-    var aboutArray = {
-        'Om oss': {
-            'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. A ipsum sed alias! Illum nobis voluptatibus magni eius, tempore quidem. Unde quis ab adipisci perferendis nostrum obcaecati cupiditate tempore doloremque quaerat. Eos culpa ipsa corrupti quidem! Assumenda iste, error deleniti sed aperiam commodi adipisci delectus voluptas officia, illum doloribus odio non ipsam odit, nemo est quaerat! Voluptatem optio sed quis beatae!',
-            'image': 'img/338478373_1172961236713969_3398877940177328384_n.webp.jpeg',
-            'alt': 'Företagsfordon Dalastubben'
-        }
-    };
-    /* Loop to display content in array */
-    for (var key in aboutArray) {
-        var serviceCard = createServiceCard(key, aboutArray[key]);
-        aboutContainer.appendChild(serviceCard);
-    }
+    var aboutTitle = document.createElement('h1');
+    aboutTitle.classList.add('about-title', 'text-center');
+    aboutTitle.textContent = 'Om oss';
+    var aboutText = document.createElement('p');
+    aboutText.classList.add('about-text');
+    aboutText.textContent = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque laudantium eius rerum, reiciendis voluptas quibusdam provident sint, qui ex, beatae assumenda error facilis vero fuga impedit quae dolorem blanditiis magni? Iusto nisi minima praesentium quis sint pariatur, recusandae architecto in omnis. Dignissimos repellendus quidem at cumque, ratione doloribus in dolorem illum nostrum. Recusandae repellendus obcaecati voluptatibus itaque quo! Enim, laboriosam?';
     /* Append to container */
+    aboutContainer.appendChild(aboutTitle);
+    aboutContainer.appendChild(aboutText);
     container.appendChild(aboutContainer);
 };
 var contactContent = function (container) {

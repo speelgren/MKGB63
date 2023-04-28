@@ -49,6 +49,10 @@ header {
     color: #212121;
 }
 
+h2 {
+    font-size: 1.7rem;
+}
+
 p {
     font-family: 'Merriweather', serif;
     color: #212121;
@@ -138,6 +142,12 @@ h1 {
 
 textarea {
     resize: none;
+}
+
+/* FAQ, remove colouring to accordion */
+
+.accordion-button:not(.collapsed) {
+    background-color: transparent;
 }
 
 /* Animations */

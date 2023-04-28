@@ -22,6 +22,23 @@ body {
     background-color: #f5f5f7;
 }
 
+/* VIEWPORT HEIGHT */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
 /* Font & colour */
 .home-title, .btn {
     font-family: 'Prompt', sans-serif;
@@ -46,12 +63,10 @@ p {
 .btn:hover {
     background-color: #f5f5f7;
     color: #212121;
-    font-weight: 600;
 }
 
 /* Logo */
 .logo {
-    margin-top: 0.75rem;
     width: 250px;
 }
 
@@ -69,20 +84,7 @@ h1 {
     font-size: 1.5rem;
 }
 
-/* Navbar */
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 999;
-}
-
-.hidden-btn {
-    background-color: #f5f5f7 !important;
-}
-
 /* Container */
-
 .home-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -90,8 +92,9 @@ h1 {
 
 /* Card */
 .card {
-    margin-top: 10px;
-    margin-bottom: 25px !important;
+    padding-bottom: 5rem;
+    background-color: #f5f5f7;
+    border: 0;
 }
 
 .card-title {
@@ -100,17 +103,39 @@ h1 {
 }
 
 .card-text {
+    text-align: center;
     text-indent: 1rem !important;
 }
 
 /* Scroll-snap-stop */
 .scroll-container {
+    overflow-y: scroll;
+    height: 100vh; /* Set the height to 100% of the viewport */
     scroll-snap-type: y mandatory;
+    /* Hide scrollbar for IE, Edge, and Firefox  */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+    display: none;
 }
 
 .scroll-item {
     scroll-snap-align: start;
-    scroll-snap-stop: normal;
+    height: 100vh; /* Set the height to 100% of the viewport */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; /* Add this line  */
+    justify-content: center;
+    align-items: center;
+}
+
+/*  */
+textarea {
+    resize: none;
 }
 
 /* Footer */
@@ -122,8 +147,16 @@ footer {
 
 @media (min-width: 991px) {
 
+    header {
+        height: 100%
+    }
+
+    .center-container {
+        height: 100%;
+    }
+
     .logo {
-        width: 250px;
+        width: 400px;
     }
 
     /* Container */
@@ -141,12 +174,6 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    .card {
-        padding-top: 5px;
-        padding-right: 5px;
-        padding-left: 5px;
-    }
-
     .card-title {
         font-size: 1.5rem;
     }
@@ -156,10 +183,5 @@ footer {
 
     h1 {
         font-size: 2rem;
-    }
-
-    .homecontainer {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
     }
 }

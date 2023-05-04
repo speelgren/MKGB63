@@ -17,14 +17,6 @@
       "oAP" : "\/fonts\/kenyan-coffee\/kenyan coffee bd it.otf",
       "oF" : 0
     },
-    "\/fonts\/kenyan-coffee\/kenyan coffee bd.otf" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/fonts\/kenyan-coffee\/kenyan coffee bd.otf",
-      "oF" : 0
-    },
     "\/fonts\/kenyan-coffee\/kenyan coffee rg it.otf" : {
       "cB" : 0,
       "ft" : 8192,
@@ -33,12 +25,12 @@
       "oAP" : "\/fonts\/kenyan-coffee\/kenyan coffee rg it.otf",
       "oF" : 0
     },
-    "\/fonts\/kenyan-coffee\/kenyan coffee rg.otf" : {
+    "\/fonts\/kenyan-coffee\/kenyan-coffee-rg.otf" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/fonts\/kenyan-coffee\/kenyan coffee rg.otf",
+      "oAP" : "\/fonts\/kenyan-coffee\/kenyan-coffee-rg.otf",
       "oF" : 0
     },
     "\/fonts\/kenyan-coffee\/Typodermic Desktop EULA 2023.pdf" : {
@@ -199,11 +191,11 @@
       "q" : 90,
       "rq" : 75
     },
-    "\/img\/Skärmbild 2023-03-27 142147.png" : {
+    "\/img\/Skärmbild-2023-03-27-142147.png" : {
       "ft" : 32768,
       "iS" : 3335706,
       "oA" : 0,
-      "oAP" : "\/img\/Skärmbild 2023-03-27 142147.png",
+      "oAP" : "\/img\/Skärmbild-2023-03-27-142147.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -218,6 +210,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/index.html",
+      "oF" : 0
+    },
+    "\/kenyan-coffee-bd.otf" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kenyan-coffee-bd.otf",
       "oF" : 0
     },
     "\/script.js" : {
@@ -245,6 +245,18 @@
       "oF" : 0,
       "rC" : 0,
       "tEC" : 0
+    },
+    "\/style-min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/style-min-min.css",
+      "oF" : 0,
+      "pg" : 0
     },
     "\/style.css" : {
       "aP" : 1,

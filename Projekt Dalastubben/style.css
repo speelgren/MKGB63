@@ -2,10 +2,6 @@
 
 /* Prompt */
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@200;300;400;700&display=swap');
-/* Roboto */
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-/* Alfa Slab One*/
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 /* Merriweather */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 
@@ -18,19 +14,7 @@ body {
 
 /* Viewport height for Header */
 header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     height: 100vh;
-}
-
-/* Giving each scroll item container (on home page) flex attributes */
-.center-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
 /* Font & colour */
@@ -41,10 +25,6 @@ header {
 .home-title {
     font-weight: 'bold';
     color: #212121;
-}
-
-h2 {
-    font-size: 1.7rem;
 }
 
 p {
@@ -73,14 +53,9 @@ p {
     width: 20rem;
 }
 
-/* Title */
-h1 {
-    font-size: 1.7rem;
-}
-
 .card-title {
-    font-family: 'Alfa Slab One';
-    font-size: 1.5rem;
+    font-family: 'Prompt', sans-serif;
+    font-weight: bold;
 }
 
 /* Container */
@@ -97,17 +72,6 @@ h1 {
 /* Card */
 .card {
     background-color: #f5f5f7;
-    border: 0;
-}
-
-.card-title {
-    text-align: center;
-    font-size: 2rem;
-}
-
-.card-text {
-    text-align: center;
-    text-indent: 1rem !important;
 }
 
 /* Scroll-snap-stop */
@@ -131,10 +95,6 @@ h1 {
     scroll-snap-align: center;
     height: 100vh;
     box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 /* Remove sizing from textarea on contact page */
@@ -190,20 +150,9 @@ textarea {
     }
 }
 
-@media (min-width: 991px) {
-    
-    .card-title {
-        font-size: 1.5rem;
-    }
-}
-
 @media (min-width: 768px) {
 
     .logo {
         width: 25rem;
-    }
-
-    h1 {
-        font-size: 2rem;
     }
 }

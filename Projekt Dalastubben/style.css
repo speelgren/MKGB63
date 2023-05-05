@@ -82,11 +82,6 @@ p {
     box-sizing: border-box;
 }
 
-/* Remove sizing from textarea on contact page */
-textarea {
-    resize: none;
-}
-
 /* FAQ, remove colouring of bootstrap accordion */
 .accordion-button:not(.collapsed) {
     background-color: transparent;

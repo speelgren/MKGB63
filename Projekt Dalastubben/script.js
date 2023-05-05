@@ -1,6 +1,7 @@
 'use strict';
 
 window.addEventListener('DOMContentLoaded', () => {
+    /* querySelect element som ska användas i koden. */
     const container = document.querySelector('.scroll-container');
     const navBtns = document.querySelectorAll('.nav-btn');
     const homeContainer = document.querySelector('.home-container');
@@ -9,6 +10,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const faqContainer = document.querySelector('.faq-container');
     const sections = document.querySelectorAll('.scroll-item');
 
+    /* Array med container som ska hämtas med index. */
     const divContainers = [
         homeContainer,
         aboutContainer,
@@ -16,15 +18,12 @@ window.addEventListener('DOMContentLoaded', () => {
         faqContainer
     ];
 
-    const scrollToContainer = (targetContainer) => {
-        container.scrollTo({
-            top: targetContainer.offsetTop
-        });
-    };
-
-    navBtns.forEach((button, index) => {
+    /* Funktion: Lägg knapplyssnare på varje nav button.
+     * Lägg till klassen active på den knapp som klickas,
+     * ta bort active från, om det finns, en annan knapp med klassen. */
+    navBtns.forEach( (button, index) => {
         button.addEventListener('click', () => {
-            navBtns.forEach((otherButton) => {
+            navBtns.forEach( (otherButton) => {
                 if (otherButton !== button) {
                     otherButton.classList.remove('active');
                 }
@@ -36,14 +35,29 @@ window.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    /* Funktion: Scrolla ner till relevant container
+     * när användaren klickar på ett menyval. */
+    const scrollToContainer = (targetContainer) => {
+        container.scrollTo({
+            top: targetContainer.offsetTop
+        });
+    };
+
+    /* Funktion: Lägg till, eller ta bort, d-none från container */
     const displayContainer = (index) => {
-        divContainers.forEach((container) => {
+        divContainers.forEach( (container) => {
             container.classList.add('d-none');
         });
 
         divContainers[index].classList.remove('d-none');
     };
 
+    /* Scroll-animationer
+     * Med inspiration from:
+     * https://www.javascripttutorial.net/dom/css/check-if-an-element-is-visible-in-the-viewport/
+     */
+
+    /* Funktion: Kolla om ett element är i viewport */
     const isInViewport = (element) => {
         const rect = element.getBoundingClientRect();
         return (
@@ -54,8 +68,9 @@ window.addEventListener('DOMContentLoaded', () => {
         );
     };
 
+    /* Funktion: Animera det element som är inom viewport. */
     const animateSections = () => {
-        sections.forEach((item) => {
+        sections.forEach( (item) => {
             const article = item.querySelector('article');
 
             if (article && isInViewport(article)) {

@@ -14,200 +14,204 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="scroll-container">
+  <div class="scroll-container">
 
-      <header class="scroll-item d-flex justify-content-center align-items-center flex-column">
+    <header class="scroll-item d-flex justify-content-center align-items-center flex-column">
+      <img class="d-flex mx-auto logo" src="img/dalastubben-logo.png" alt="Dalastubben">
+      <nav class="navbar navbar-expand mt-2">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item m-1">
+            <button class="btn nav-btn">Hem</button>
+          </li>
+          <li class="nav-item m-1">
+            <button class="btn nav-btn">Om oss</button>
+          </li>
+          <li class="nav-item m-1">
+              <button class="btn nav-btn">Kontakt</button>
+          </li>
+          <li class="nav-item m-1">
+            <button class="btn nav-btn">FAQ</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  
+    <main>
+      <!-- Home Container-->
+      <div class="home-container container d-none">
+        <section class="card border border-0 scroll-item">
+          <article class="card-body d-flex justify-content-center align-items-center flex-column bounceFromLeft">
+            <img src="img/Skärmbild-2023-03-27-142147.png" alt="Stubbfräsning" class="card-img-top rounded">
+              <h2 class="card-title mt-3"><strong>STUBBFRÄSNING</strong></h2>
+                <p class="card-text text-center">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non excepturi autem cupiditate asperiores facere aliquam esse eos eius quidem qui at sint nulla quos commodi alias illum, iure deleniti veritatis?
+                </p>
+          </article>
+        </section>
+        <section class="card border border-0 scroll-item">
+          <article class="card-body d-flex justify-content-center align-items-center flex-column fadeIn">
+            <img src="img/SC362_Action_01.jpg" alt="Buskfräsning" class="card-img-top rounded">
+              <h2 class="card-title mt-3"><strong>BUSKFRÄSNING</strong></h2>
+                <p class="card-text text-center">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium enim perferendis quo in placeat veritatis deserunt culpa, reiciendis harum unde adipisci, recusandae aliquid iure tempora voluptas ipsum optio voluptatum sint?
+                </p>
+          </article>
+        </section>
+        <section class="card border border-0 scroll-item">
+          <article class="card-body d-flex justify-content-center align-items-center flex-column bounceFromRight">
+            <img src="img/forest-g609f0d95e_1920.jpg" alt="Trädfällning" class="card-img-top rounded">
+              <h2 class="card-title mt-3"><strong>TRÄDFÄLLNING</strong></h2>
+                <p class="card-text text-center">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora aspernatur officia aliquid ea quod asperiores cupiditate nostrum enim maxime, veniam error accusamus sed eos iure deleniti doloremque.
+                </p>
+          </article>
+        </section>
+      </div>
 
-        <img class="d-flex mx-auto logo" src="img/dalastubben-logo.png" alt="Dalastubben">
+      <!-- About Container -->
+      <div class="about-container container scroll-item d-flex justify-content-center align-items-center flex-column d-none">
+        <section class="card border border-0 m-3">
+          <article class="card-body d-flex justify-content-center align-items-center flex-column">
+            <h2 class="about-title mt-3"><strong>OM OSS</strong></h2>
+              <p class="about-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque laudantium eius rerum, reiciendis voluptas quibusdam provident sint, qui ex, beatae assumenda error facilis vero fuga impedit quae dolorem blanditiis magni? Iusto nisi minima praesentium quis sint pariatur, recusandae architecto in omnis. Dignissimos repellendus quidem at cumque, ratione doloribus in dolorem illum nostrum. Recusandae repellendus obcaecati voluptatibus itaque quo! Enim, laboriosam?
+              </p>
+          </article>
+        </section>
+      </div>
 
-        <nav class="navbar navbar-expand mt-2">
-            <ul class="navbar-nav mx-auto">
-                <li class="nav-item m-1">
-                    <button class="btn nav-btn">Hem</button>
-                </li>
-                <li class="nav-item m-1">
-                    <button class="btn nav-btn">Om oss</button>
-                </li>
-                <li class="nav-item m-1">
-                    <button class="btn nav-btn">Kontakt</button>
-                </li>
-                <li class="nav-item m-1">
-                    <button class="btn nav-btn">FAQ</button>
-                </li>
-            </ul>
-        </nav>
+      <!-- Contact Container -->
+      <div class="contact-container container scroll-item d-flex justify-content-center align-items-center flex-column d-none">
+        <div class="container center-form">
+          <form>
+            <div class="form-group">
+              <label for="name">Namn:</label>
+              <input type="text" class="form-control" id="name" name="name">
+            </div>
+            <div class="form-group pt-2">
+              <label for="telephone">Telefon:</label>
+              <input type="tel" class="form-control" id="telephone" name="telephone">
+            </div>
+            <div class="form-group pt-2">
+              <label for="message">Meddelande:</label>
+              <textarea class="form-control" id="message" rows="3" name="message"></textarea>
+            </div>
+            <button type="submit" class="btn mt-2">Skicka</button>
+          </form>
+        </div>    
+      </div>
 
-      </header>
-    
-      <main>
-
-        <!-- Home Container-->
-        <div class="home-container container d-none">
-            <section class="card border border-0 scroll-item">
-                <article class="card-body center-container d-flex justify-content-center align-items-center flex-column bounceFromLeft">
-                    <img src="img/Skärmbild-2023-03-27-142147.png" alt="Stubbfräsning" class="card-img-top rounded">
-                    <h2 class="card-title text-center mt-3">STUBBFRÄSNING</h2>
-                    <p class="card-text text-center">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non excepturi autem cupiditate asperiores facere aliquam esse eos eius quidem qui at sint nulla quos commodi alias illum, iure deleniti veritatis?
+      <!-- FAQ Container -->
+      <div class="faq-container container scroll-item d-flex justify-content-center align-items-center flex-column d-none">
+        <div class="container mt-5">
+          <h2 class="text-center mb-4"><strong>Frågor och Svar</strong></h2>
+            <div class="accordion" id="faqAccordion">
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit?
+                  </button>
+                </h3>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo repellat voluptas pariatur. Voluptatum in alias, consectetur aut perferendis accusamus ad doloremque animi, numquam nulla nisi vero quaerat repellendus harum ea.
+                      Sapiente laboriosam magni temporibus molestias architecto dignissimos aliquid laudantium delectus dolores? A eum repudiandae, voluptates quod nemo repellendus, deserunt itaque quaerat hic dicta esse totam? Nemo reiciendis maxime nihil laudantium?
                     </p>
-                </article>
-            </section>
-            <section class="card border border-0 scroll-item">
-                <article class="card-body center-container d-flex justify-content-center align-items-center flex-column fadeIn">
-                    <img src="img/SC362_Action_01.jpg" alt="Buskfräsning" class="card-img-top rounded">
-                    <h2 class="card-title text-center mt-3">BUSKFRÄSNING</h2>
-                    <p class="card-text text-center">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium enim perferendis quo in placeat veritatis deserunt culpa, reiciendis harum unde adipisci, recusandae aliquid iure tempora voluptas ipsum optio voluptatum sint?
-                    </p>
-                </article>
-            </section>
-            <section class="card border border-0 scroll-item">
-                <article class="card-body center-container d-flex justify-content-center align-items-center flex-column bounceFromRight">
-                    <img src="img/forest-g609f0d95e_1920.jpg" alt="Trädfällning" class="card-img-top rounded">
-                    <h2 class="card-title text-center mt-3">TRÄDFÄLLNING</h2>
-                    <p class="card-text text-center">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora aspernatur officia aliquid ea quod asperiores cupiditate nostrum enim maxime, veniam error accusamus sed eos iure deleniti doloremque.
-                    </p>
-                </article>
-            </section>
-        </div>
-
-        <!-- About Container -->
-        <div class="about-container container scroll-item d-flex justify-content-center align-items-center flex-column d-none">
-            <section class="card border border-0 m-3">
-                <article class="card-body center-container d-flex justify-content-center align-items-center flex-column">
-                    <h2 class="about-title mt-3">OM OSS</h2>
-                    <p class="about-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque laudantium eius rerum, reiciendis voluptas quibusdam provident sint, qui ex, beatae assumenda error facilis vero fuga impedit quae dolorem blanditiis magni? Iusto nisi minima praesentium quis sint pariatur, recusandae architecto in omnis. Dignissimos repellendus quidem at cumque, ratione doloribus in dolorem illum nostrum. Recusandae repellendus obcaecati voluptatibus itaque quo! Enim, laboriosam?
-                    </p>
-                </article>
-            </section>
-        </div>
-
-        <!-- Contact Container -->
-        <div class="contact-container container scroll-item d-flex justify-content-center align-items-center flex-column d-none">
-            <div class="container center-form">
-                <form>
-                  <div class="form-group">
-                    <label for="name">Namn:</label>
-                    <input type="text" class="form-control" id="name" name="name">
                   </div>
-                  <div class="form-group pt-2">
-                    <label for="telephone">Telefon:</label>
-                    <input type="tel" class="form-control" id="telephone" name="telephone">
-                  </div>
-                  <div class="form-group pt-2">
-                    <label for="message">Meddelande:</label>
-                    <textarea class="form-control" id="message" rows="3" name="message"></textarea>
-                  </div>
-                  <button type="submit" class="btn mt-2">Skicka</button>
-                </form>
+                </div>
               </div>
-            
-        </div>
-
-        <!-- FAQ Container -->
-        <div class="faq-container container scroll-item d-flex justify-content-center align-items-center flex-column d-none">
-            <div class="container mt-5">
-                <h2 class="text-center mb-4">Frågor och Svar</h2>
-                <div class="accordion" id="faqAccordion">
-                  <div class="accordion-item">
-                    <h3 class="accordion-header" id="headingOne">
-                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit?
-                      </button>
-                    </h3>
-                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
-                      <div class="accordion-body">
-                        <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo repellat voluptas pariatur. Voluptatum in alias, consectetur aut perferendis accusamus ad doloremque animi, numquam nulla nisi vero quaerat repellendus harum ea.
-                        Sapiente laboriosam magni temporibus molestias architecto dignissimos aliquid laudantium delectus dolores? A eum repudiandae, voluptates quod nemo repellendus, deserunt itaque quaerat hic dicta esse totam? Nemo reiciendis maxime nihil laudantium?
-                        </p>
-                      </div>
-                    </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Nemo reiciendis maxime nihil laudantium?
+                  </button>
+                </h3>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium unde voluptas impedit vero blanditiis qui incidunt officiis omnis quos odio in soluta enim exercitationem, neque ea illo, numquam quo dolor!
+                      Dolore possimus maxime debitis, fugit ut ducimus nobis ab cum natus saepe architecto modi maiores velit vel doloremque eius eaque quos odio aliquid molestiae harum. Unde debitis dicta consectetur fugit!
+                      Consequatur provident ipsa libero ad voluptas iste cumque, vitae, eum eius quas illo? Aut suscipit iure eius nam adipisci minima facere recusandae dolor perspiciatis debitis, iusto laborum, expedita sit praesentium.
+                    </p>
                   </div>
-                  <div class="accordion-item">
-                    <h3 class="accordion-header" id="headingTwo">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Nemo reiciendis maxime nihil laudantium?
-                      </button>
-                    </h3>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
-                      <div class="accordion-body">
-                        <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium unde voluptas impedit vero blanditiis qui incidunt officiis omnis quos odio in soluta enim exercitationem, neque ea illo, numquam quo dolor!
-                        Dolore possimus maxime debitis, fugit ut ducimus nobis ab cum natus saepe architecto modi maiores velit vel doloremque eius eaque quos odio aliquid molestiae harum. Unde debitis dicta consectetur fugit!
-                        Consequatur provident ipsa libero ad voluptas iste cumque, vitae, eum eius quas illo? Aut suscipit iure eius nam adipisci minima facere recusandae dolor perspiciatis debitis, iusto laborum, expedita sit praesentium.
-                        </p>
-                      </div>
-                    </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Lorem ipsum dolor sit amet consectetur?
+                  </button>
+                </h3>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit voluptates eius at voluptatibus reiciendis doloribus, nam consequuntur nostrum sunt fuga adipisci ab, amet repudiandae facilis itaque minima repellendus, asperiores molestias?
+                    Quas sint corrupti voluptatum harum nisi architecto eligendi repellendus dignissimos pariatur natus, at eos alias doloribus fugiat nam delectus sequi adipisci aspernatur laudantium odit cum? Ut cum debitis ullam consectetur.
+                    </p>
                   </div>
-                  <div class="accordion-item">
-                    <h3 class="accordion-header" id="headingThree">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Lorem ipsum dolor sit amet consectetur?
-                      </button>
-                    </h3>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
-                      <div class="accordion-body">
-                        <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit voluptates eius at voluptatibus reiciendis doloribus, nam consequuntur nostrum sunt fuga adipisci ab, amet repudiandae facilis itaque minima repellendus, asperiores molestias?
-                        Quas sint corrupti voluptatum harum nisi architecto eligendi repellendus dignissimos pariatur natus, at eos alias doloribus fugiat nam delectus sequi adipisci aspernatur laudantium odit cum? Ut cum debitis ullam consectetur.
-                        </p>
-                      </div>
-                    </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Ut cum debitis ullam consectetur?
+                  </button>
+                </h3>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi ex consequuntur corrupti voluptatem impedit! Temporibus, illo qui, delectus explicabo tenetur, minus vero incidunt neque sequi itaque porro deserunt ipsum voluptatum.
+                      Rem quibusdam hic illum expedita enim delectus, consectetur recusandae molestiae distinctio provident nostrum voluptates impedit voluptate pariatur ducimus excepturi. Explicabo alias laborum consequuntur eaque odio, recusandae voluptates! Corporis, at ipsum.
+                    </p>
                   </div>
-                  <div class="accordion-item">
-                    <h3 class="accordion-header" id="headingFour">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                        Ut cum debitis ullam consectetur?
-                      </button>
-                    </h3>
-                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
-                      <div class="accordion-body">
-                        <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi ex consequuntur corrupti voluptatem impedit! Temporibus, illo qui, delectus explicabo tenetur, minus vero incidunt neque sequi itaque porro deserunt ipsum voluptatum.
-                        Rem quibusdam hic illum expedita enim delectus, consectetur recusandae molestiae distinctio provident nostrum voluptates impedit voluptate pariatur ducimus excepturi. Explicabo alias laborum consequuntur eaque odio, recusandae voluptates! Corporis, at ipsum.
-                        </p>
-                      </div>
-                    </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    Ullam doloribus ex voluptas?
+                  </button>
+                </h3>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde iste assumenda quas aperiam repellendus deleniti quia possimus non repudiandae qui fuga aut, ipsa ea odit doloremque pariatur perspiciatis corporis soluta?
+                      Libero molestias eos debitis voluptatem repudiandae ad ipsam, doloribus dolor explicabo iste? Nisi asperiores quae assumenda eum officia, enim incidunt veritatis excepturi quas quidem, tempore voluptate dolor accusamus explicabo. Pariatur!
+                    </p>
                   </div>
-                  <div class="accordion-item">
-                    <h3 class="accordion-header" id="headingFive">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                        Ullam doloribus ex voluptas?
-                      </button>
-                    </h3>
-                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
-                      <div class="accordion-body">
-                        <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde iste assumenda quas aperiam repellendus deleniti quia possimus non repudiandae qui fuga aut, ipsa ea odit doloremque pariatur perspiciatis corporis soluta?
-                        Libero molestias eos debitis voluptatem repudiandae ad ipsam, doloribus dolor explicabo iste? Nisi asperiores quae assumenda eum officia, enim incidunt veritatis excepturi quas quidem, tempore voluptate dolor accusamus explicabo. Pariatur!
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h3 class="accordion-header" id="headingSix">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                        Sit, recusandae?
-                      </button>
-                    </h3>
-                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faqAccordion">
-                      <div class="accordion-body">
-                        <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil amet quaerat tempore. Temporibus, cumque totam est dicta voluptatum iste accusantium aliquid officiis, sapiente repellat ex molestias porro. Eos, voluptatibus esse.
-                        Repellendus perferendis officiis accusamus delectus velit debitis itaque esse laboriosam, hic et ipsam laudantium similique quis omnis illo labore suscipit aperiam consectetur inventore facere asperiores id, repellat minus! Sit, recusandae?
-                        </p>
-                      </div>
+                </div>
+              </div>
+                <div class="accordion-item">
+                  <h3 class="accordion-header" id="headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                      Sit, recusandae?
+                    </button>
+                  </h3>
+                  <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                      <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil amet quaerat tempore. Temporibus, cumque totam est dicta voluptatum iste accusantium aliquid officiis, sapiente repellat ex molestias porro. Eos, voluptatibus esse.
+                      Repellendus perferendis officiis accusamus delectus velit debitis itaque esse laboriosam, hic et ipsam laudantium similique quis omnis illo labore suscipit aperiam consectetur inventore facere asperiores id, repellat minus! Sit, recusandae?
+                    </p>
                     </div>
                   </div>
                 </div>
               </div>
         </div>
-      </main>
+      </div>
+    </main>
 
-</div>
+    <footer class="sticky-bottom">
+      <div class="row p-0 m-0">
+          <div class="col">
+            <p class="text-center">
+              © 2023 Dalastubben
+            </p>
+          </div>
+      </div>
+    </footer>
+  </div>
     <!-- Egen JavaScript -->
     <script src="script.js"></script>
     <!-- Bootstrap 5 -->

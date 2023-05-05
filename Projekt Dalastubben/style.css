@@ -18,13 +18,8 @@ header {
 }
 
 /* Font & colour */
-.home-title, .btn {
+.btn, .card-title {
     font-family: 'Prompt', sans-serif;
-}
-
-.home-title {
-    font-weight: 'bold';
-    color: #212121;
 }
 
 p {
@@ -38,12 +33,7 @@ p {
     color: #f5f5f7;
 }
 
-.btn:hover {
-    background-color: #f5f5f7;
-    color: #212121;
-}
-
-.active {
+.btn:hover, .active {
     background-color: #f5f5f7;
     color: #212121;
 }
@@ -51,11 +41,6 @@ p {
 /* Logo size */
 .logo {
     width: 20rem;
-}
-
-.card-title {
-    font-family: 'Prompt', sans-serif;
-    font-weight: bold;
 }
 
 /* Container */

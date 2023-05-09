@@ -9,38 +9,6 @@
   ],
   "creatorBuild" : "34472",
   "files" : {
-    "\/fonts\/kenyan-coffee\/kenyan coffee bd it.otf" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/fonts\/kenyan-coffee\/kenyan coffee bd it.otf",
-      "oF" : 0
-    },
-    "\/fonts\/kenyan-coffee\/kenyan coffee rg it.otf" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/fonts\/kenyan-coffee\/kenyan coffee rg it.otf",
-      "oF" : 0
-    },
-    "\/fonts\/kenyan-coffee\/kenyan-coffee-rg.otf" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/fonts\/kenyan-coffee\/kenyan-coffee-rg.otf",
-      "oF" : 0
-    },
-    "\/fonts\/kenyan-coffee\/Typodermic Desktop EULA 2023.pdf" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/fonts\/kenyan-coffee\/Typodermic Desktop EULA 2023.pdf",
-      "oF" : 0
-    },
     "\/img\/338478373_1172961236713969_3398877940177328384_n.webp.jpeg" : {
       "ft" : 16384,
       "iS" : 311335,
@@ -73,91 +41,6 @@
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/img\/forest-g609f0d95e_1920.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/img\/forest-g936cb3bf0_1920.jpg" : {
-      "ft" : 16384,
-      "iS" : 840656,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/img\/forest-g936cb3bf0_1920.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/img\/icon\/icons8-facebook.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/img\/icon\/icons8-facebook.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/img\/icon\/icons8-instagram.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/img\/icon\/icons8-instagram.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/img\/PXL_20230418_074412463.PORTRAIT.jpg" : {
-      "ft" : 16384,
-      "iS" : 7525916,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/img\/PXL_20230418_074412463.PORTRAIT.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/img\/PXL_20230418_074420026.jpg" : {
-      "ft" : 16384,
-      "iS" : 4086822,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/img\/PXL_20230418_074420026.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/img\/PXL_20230420_063527274.jpg" : {
-      "ft" : 16384,
-      "iS" : 4462327,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/img\/PXL_20230420_063527274.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/img\/PXL_20230420_071831380.jpg" : {
-      "ft" : 16384,
-      "iS" : 4940296,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/img\/PXL_20230420_071831380.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -212,13 +95,20 @@
       "oAP" : "\/index.html",
       "oF" : 0
     },
-    "\/kenyan-coffee-bd.otf" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
+    "\/oldscript.ts" : {
+      "cDF" : 0,
+      "ft" : 128,
+      "jxM" : 0,
+      "ma" : 0,
+      "mDT" : 0,
+      "mi" : 0,
+      "moR" : 0,
+      "moT" : 2,
       "oA" : 0,
-      "oAP" : "\/kenyan-coffee-bd.otf",
-      "oF" : 0
+      "oAP" : "\/oldscript.js",
+      "oF" : 0,
+      "rC" : 0,
+      "tEC" : 0
     },
     "\/script.js" : {
       "bF" : 0,
@@ -230,33 +120,6 @@
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
-    },
-    "\/script.ts" : {
-      "cDF" : 0,
-      "ft" : 128,
-      "jxM" : 0,
-      "ma" : 0,
-      "mDT" : 0,
-      "mi" : 0,
-      "moR" : 0,
-      "moT" : 2,
-      "oA" : 0,
-      "oAP" : "\/script.js",
-      "oF" : 0,
-      "rC" : 0,
-      "tEC" : 0
-    },
-    "\/style-min.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/style-min-min.css",
-      "oF" : 0,
-      "pg" : 0
     },
     "\/style.css" : {
       "aP" : 1,

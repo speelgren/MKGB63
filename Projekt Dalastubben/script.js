@@ -4,18 +4,14 @@ window.addEventListener('DOMContentLoaded', () => {
     /* querySelect element som ska användas i koden. */
     const container = document.querySelector('.scroll-container');
     const navBtns = document.querySelectorAll('.nav-btn');
-    const homeContainer = document.querySelector('.home-container');
-    const aboutContainer = document.querySelector('.about-container');
-    const contactContainer = document.querySelector('.contact-container');
-    const faqContainer = document.querySelector('.faq-container');
     const sections = document.querySelectorAll('.scroll-item');
 
     /* Array med container som ska hämtas med index. */
     const divContainers = [
-        homeContainer,
-        aboutContainer,
-        contactContainer,
-        faqContainer
+        document.querySelector('.home-container'),
+        document.querySelector('.about-container'),
+        document.querySelector('.contact-container'),
+        document.querySelector('.faq-container')
     ];
 
     /* Funktion: Lägg knapplyssnare på varje nav button.

@@ -92,13 +92,36 @@ header {
 }
 
 /* Animations */
-@keyframes bounceFromLeft {
+@-webkit-keyframes bounceFromLeft {
     0% {
+        -webkit-transform: translateX(-100%);
         transform: translateX(-100%);
         opacity: 0;
     }
     100% {
+        -webkit-transform: translateX(0);
         transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes bounceFromLeft {
+    0% {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
         opacity: 1;
     }
 }
@@ -112,12 +135,27 @@ header {
     }
 }
 
-@keyframes bounceFromRight {
+@-webkit-keyframes bounceFromRight {
     0% {
+        -webkit-transform: translateX(100%);
         transform: translateX(100%);
         opacity: 0;
     }
     100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounceFromRight {
+    0% {
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0);
         transform: translateX(0);
         opacity: 1;
     }
